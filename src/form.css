@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    direction: rtl;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* מיכל כולל */
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 20px;
+    height: 500px; /* הגדרת גובה לעיצוב הכללי */
+  }
+  
+  /* עיצוב למפה */
+  .map-container {
+    flex: 3;  /* המפה תופסת את שלושת הרבעים של המסך */
+    height: 150%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* עיצוב לטופס */
+  .form-container {
+    flex: 1; /* הטופס תופס רבע מהמרחב */
+    padding: 20px;
+    background-color: #d9f7d9;  /* צבע רקע ירוק */
+    border-radius: 8px;
+    color: rgb(7, 1, 1); /* צבע טקסט לבן */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 150%;
+    overflow-y: auto;
+  }
+  
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(13, 2, 2); /* צבע טקסט לבן */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  .MuiTextField-root {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #120202;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    background-color: rgb(255, 255, 255);
+    color: #333;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* רווח בין קבוצות של תיבה ותווית */
+    
+}
+
+.checkbox-group div {
+        align-items: center; /* מוודא שהתיבה והתווית מיושרים אנכית */
+
+    /* /* display: flex;
+    flex-direction: column;
+    gap: 5px; /* רווח קטן בין התיבה לתווית
+
+  input[type="checkbox"] {
+    margin-right: 10px;
+  } */
+}
+  /* עיצוב ל-Autocomplete */
+  .MuiTextField-root {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* עיצוב למרווחים */
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
